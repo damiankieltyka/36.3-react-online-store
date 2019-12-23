@@ -1,0 +1,43 @@
+@import "./src/styles/variables";
+
+.paginationPanel {
+
+  ul {
+    padding: 35px 0 30px;
+
+    li {
+      list-style-type: none;
+      display: inline-block;
+      padding: 4px 15px;
+      font-size: 19px;
+      cursor: pointer;
+      font-weight: 500;
+      color: $secondary;
+      transition: $transition-quick;
+
+      &:hover {
+        color: $text-secondary;
+      }
+
+      &:active {
+        color: $promoted-item;
+      }
+
+      &.active {
+        color: $active;
+      }
+
+      svg {
+        font-size: 15px;
+        vertical-align: baseline;
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+
+  .paginationPanel ul li {
+    padding: 4px 14px;
+  }
+}

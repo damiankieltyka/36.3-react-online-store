@@ -1,0 +1,12 @@
+[
+  {
+    "code": "SHOES-20",
+    "type": "minus",
+    "value": 20
+  },
+  {
+    "code": "WINTER",
+    "type": "percent",
+    "value": 15
+  }
+]

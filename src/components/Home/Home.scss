@@ -1,0 +1,115 @@
+@import "./src/styles/variables";
+
+.home {
+
+  .jumbotron {
+    background-image: url(../../images/hero-background.jpg);
+    background-size: cover;
+    background-position: top center;
+    height: 45vh;
+    min-height: 500px;
+    position: relative;
+    border-radius: 0;
+
+    .jumbotronContent {
+      position: absolute;
+      right: 0;
+      padding: 50px;
+      background: rgba(255, 255, 255, .5);
+      width: 35vw;
+
+      h1 {
+        text-transform: uppercase;
+        font-weight: 700;letter-spacing: 1px;
+
+        span {
+          color: $promoted-item;
+        }
+      }
+
+      .backgroundBtn {
+        margin-top: 30px;
+        background-color: $promoted-item;
+        height: 50px;
+        font-weight: 600;
+        font-size: 18px;
+
+        &:hover {
+          opacity: 1;
+          filter: brightness(1.15);
+        }
+      }
+    }
+  }
+
+  a:hover {
+    text-decoration: none
+  }
+
+  .promotedItems {
+
+    h2 {
+      text-transform: capitalize;
+      font-size: 28px;
+    }
+  }
+
+  .buttonContainer {
+
+    a .backgroundBtn {
+      margin: 24px auto;
+    }
+  }
+
+  .productList {
+    max-width: 880px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .home {
+
+    .productList {
+      min-height: fit-content;
+      max-width: 1140px;
+    }
+
+    .productListItemWrapper {
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+
+      .thumbnail {
+        max-height: 340px;
+
+        img {
+          height: auto;
+          width: 100%;
+          object-fit: cover;
+          object-position: center 25%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+
+  .home {
+
+    .jumbotron {
+      height: auto;
+      margin: 15px 0 47px;
+
+      .jumbotronContent {
+        width: 100%;
+        margin: 25px 0;
+      }
+    }
+
+    .productListWrapper {
+      padding: 0;
+    }
+  }
+}

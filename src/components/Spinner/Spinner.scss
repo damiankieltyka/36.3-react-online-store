@@ -1,0 +1,12 @@
+.spinner {
+  height: 100%;
+  margin-top: calc(50% - 100px);
+}
+
+.home,
+.productPage {
+  
+  .spinner {
+    margin-top: 0;
+  }
+}

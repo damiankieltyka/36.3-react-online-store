@@ -1,0 +1,39 @@
+@import "./src/styles/variables";
+
+.checkoutConfirm {
+
+  .paragraphContainer {
+    padding-bottom: 70px;
+    margin: 0 auto;
+    text-align: center;
+
+    p {
+      margin-bottom: 4px;
+    }
+  }
+
+  .checkoutData {
+
+    table {
+      margin-bottom: 15px;
+
+      tfoot {
+        border-bottom: 2px solid $secondary;
+
+        tr td {
+
+          i,
+          .value {
+            font-size: 18px;
+            font-weight: 700;
+            font-style: normal;
+          }
+        }
+      }
+    }
+
+    .backgroundBtn {
+      margin-top: 56px;
+    }
+  }
+}

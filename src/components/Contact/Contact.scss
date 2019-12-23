@@ -1,0 +1,81 @@
+@import "./src/styles/variables";
+
+.contact {
+
+  .formWrapper {
+    margin: 30px auto 50px;
+    max-width: 700px;
+    font-size: 14px;
+    padding-top: 31px;
+
+    form {
+      width: 100%;
+
+      textarea {
+        resize: none;
+        min-height: 86px;
+        line-height: 1.4em;
+      }
+
+      .inputItem {
+        position: relative;
+        padding: 15px;
+
+        .input-name {
+          position: absolute;
+          top: 15px;
+          left: 15px;
+          text-transform: uppercase;
+          transform: translateY(12px);
+          transition: .4s;
+          z-index: 0;
+          color: $text;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+          font-weight: 500;
+          font-size: 14px;
+          padding: 12px 0;
+          width: 100%;
+          outline: none;
+          background-color: transparent;
+          border: 2px solid transparent;
+          border-left: none;
+          border-right: none;
+          border-bottom: 2px solid $secondary;
+          color: $text;
+          transition: $transition;
+          z-index: 999;
+
+          &::placeholder {
+            text-transform: uppercase;
+            color: $secondary;
+          }
+
+          &:focus,
+          &.active {
+            border-bottom: 2px solid $promoted-item;
+
+            &+ .input-name {
+              transform: translateY(-5px);
+              font-size: 11px;
+              color: $secondary;
+            }
+          }
+        }
+
+        textarea {
+          &+ .input-name {
+            transform: translateY(56px);
+          }
+        }
+      }
+
+      .backgroundBtn {
+        margin: 28px 15px;
+      }
+    }
+  }
+}
