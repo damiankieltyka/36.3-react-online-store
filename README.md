@@ -1,6 +1,8 @@
 ### About
 Simple React project of an online shoe shop.
 
+App deployed on Heroku platform, available at <a>http://clarks-online-store-react.herokuapp.com/</a>
+
 ### Technologies
 This project was created by WebStorm React template. Used solutions are:
 - React.js - build user interface
