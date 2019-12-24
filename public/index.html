@@ -5,10 +5,25 @@
     <link rel="shortcut icon" href="public/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
     <title>Clarks Online Store: Best! Shoes! Ever!.</title>
   </head>
   <body style="overflow-y: scroll">
     <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBXJ-70K9kLxwcwnpOxuVsGEzMHxyC7Bxs",
+            authDomain: "clarks-online-store-reasct.firebaseapp.com",
+            databaseURL: "https://clarks-online-store-reasct.firebaseio.com",
+            projectId: "clarks-online-store-reasct",
+            storageBucket: "clarks-online-store-reasct.appspot.com",
+            messagingSenderId: "368047996672",
+            appId: "1:368047996672:web:781d9501fe827c853a7de5"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
   </body>
 </html>
